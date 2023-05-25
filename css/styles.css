@@ -93,3 +93,49 @@ a {
   .admin-text,
   .brand-logo {
     display: none !important; } }
+
+main {
+  background-color: #EBEBEB;
+  padding: 1rem; }
+
+h2 {
+  color: #333333;
+  font-size: 2.8rem;
+  margin-bottom: 1.1rem; }
+
+.card-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.card {
+  max-width: 380px;
+  background-color: white;
+  margin: 1.1rem; }
+
+h3 {
+  font-size: 1.3rem;
+  color: #787878; }
+
+.date {
+  color: #787878; }
+
+.web-link-container {
+  background-color: #EBEBEB;
+  width: auto;
+  padding: 0.6rem 4rem 0.6rem 0.6rem;
+  margin: 1.5rem 0; }
+
+.user-page-link {
+  color: #333333;
+  word-wrap: break-word; }
+  .user-page-link:visited {
+    color: #787878; }
+
+.user-photo {
+  width: 100%;
+  object-fit: contain;
+  object-position: center; }
+
+.user-info {
+  padding: 1.1rem; }

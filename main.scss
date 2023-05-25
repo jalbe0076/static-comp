@@ -137,7 +137,65 @@ a {
 }
 
 // =============================================================================================
-// ================================   USER CARDS   =============================================
+// ===============================   MAIN SECTION   ============================================
 // =============================================================================================
 
+main {
+  background-color: $brand-light-grey;
+  padding: 1rem;
+}
 
+h2 {
+  color: $nav-grey;
+  font-size: 2.8rem;
+  margin-bottom: 1.1rem;
+}
+
+// =============================================================================================
+// ================================   USER CARDS   =============================================
+// =============================================================================================
+.card-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 380px;
+  background-color: white;
+  margin: 1.1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: $nav-light-grey;
+}
+
+.date {
+  color: $nav-light-grey;
+}
+
+.web-link-container {
+  background-color: $brand-light-grey;
+  width: auto;
+  padding: 0.6rem 4rem 0.6rem 0.6rem;
+  margin: 1.5rem 0;
+}
+
+.user-page-link {
+  color: $nav-grey;
+  word-wrap: break-word;      
+
+  &:visited {
+    color: $nav-light-grey;
+  }
+}
+
+.user-photo {
+ width: 100%;  
+ object-fit: contain;
+ object-position: center;
+}
+
+.user-info {
+  padding: 1.1rem
+}
