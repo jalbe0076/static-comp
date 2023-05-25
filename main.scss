@@ -16,8 +16,7 @@ nav {
   background-color: $nav-grey;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  // width: 100vw;
+  padding: 14px;
   min-height: 101.5px;
 }
 
@@ -25,13 +24,11 @@ h1 {
   font-family: 'Bree Serif', serif;
   color: $brand-light-grey;
   font-size: 3rem;
-  // display: inline-block;
-  // float: right;
 }
 
 a {
   text-decoration: none;
-  // vertical-align: middle;
+  font-size: 1.1rem;
   
   &:link {
     color: $nav-light-grey;
@@ -42,15 +39,20 @@ a {
   } 
 
   & img {
-    margin-right: 0.8rem;
+    margin-right: 0.4rem;
   }
 }
 
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .brand-logo {
+  height: 50px;
   width: 50px;
-  height: auto;
-  // display: inline-block;
-  // float: right;
+  padding-left: 1rem;
 }
 
 .nav-link {
@@ -61,12 +63,28 @@ a {
   filter: invert(100%) sepia(39%) saturate(432%) hue-rotate(193deg) brightness(114%) contrast(84%);
 }
 
+.navigation-list {
+  display: flex;
+  align-items: flex-end;
+}
+
 .navigation-list a{
   padding: 0 0.8rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .navigation-title {
-  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-settings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .title {
@@ -77,39 +95,44 @@ a {
   width: 12px;
   height: auto;
   transform: rotate(180deg);
-  margin: 0;
+  margin: 0 0 0 0.8rem ;
   padding: 0;
 }
 
-@media (min-width: 500px) and (max-width: 720px) {
+@media (max-width: 720px) {
   .navigation-list {
-    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
   }
+  
+  .nav-link {
+    width: 20px;
+    margin: 0.5rem 0.8rem 0.5rem 0;
+  }
+
+  .arrow {
+    width: 12px;
+    margin: 0.5rem 0 0.5rem 0.8rem;
+  }  
 }
 
 @media (max-width: 500px) {
-  .navigation-list {
-    display: flex;
-    flex-direction: column;
+  .navigation-list a{
+    padding: 0;
   }
 
-  .nav-link {
-    width: 20px;
-    height: auto;
-    margin: 0.5rem 0.8rem 0.5rem 0;
-
-    &.arrow {
-      width: 12px;
-    }
+  .navigation-title {
+    flex-direction: column-reverse;
   }
 
   h1 {
     font-size: 2.5rem;
   }
 
-  .admin-text {
-    display: none;
+  .admin-text,
+  .brand-logo {
+    display: none !important;
   }
 }
 

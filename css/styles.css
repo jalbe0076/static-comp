@@ -7,7 +7,7 @@ nav {
   background-color: #333333;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 14px;
   min-height: 101.5px; }
 
 h1 {
@@ -16,17 +16,24 @@ h1 {
   font-size: 3rem; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 1.1rem; }
   a:link {
     color: #787878; }
   a:visited {
     color: #EBEBEB; }
   a img {
-    margin-right: 0.8rem; }
+    margin-right: 0.4rem; }
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
 
 .brand-logo {
+  height: 50px;
   width: 50px;
-  height: auto; }
+  padding-left: 1rem; }
 
 .nav-link {
   filter: invert(42%) sepia(69%) saturate(3017%) hue-rotate(183deg) brightness(103%) contrast(106%); }
@@ -34,11 +41,25 @@ a {
 .nav-user {
   filter: invert(100%) sepia(39%) saturate(432%) hue-rotate(193deg) brightness(114%) contrast(84%); }
 
+.navigation-list {
+  display: flex;
+  align-items: flex-end; }
+
 .navigation-list a {
-  padding: 0 0.8rem 0 0; }
+  padding: 0 0.8rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
 
 .navigation-title {
-  text-align: end; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.user-settings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
 
 .title {
   font-family: 'Bree Serif', serif; }
@@ -47,25 +68,28 @@ a {
   width: 12px;
   height: auto;
   transform: rotate(180deg);
-  margin: 0;
+  margin: 0 0 0 0.8rem;
   padding: 0; }
 
-@media (min-width: 500px) and (max-width: 720px) {
+@media (max-width: 720px) {
   .navigation-list {
-    display: flex;
-    flex-direction: column; } }
-
-@media (max-width: 500px) {
-  .navigation-list {
-    display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; }
   .nav-link {
     width: 20px;
-    height: auto;
     margin: 0.5rem 0.8rem 0.5rem 0; }
-    .nav-link.arrow {
-      width: 12px; }
+  .arrow {
+    width: 12px;
+    margin: 0.5rem 0 0.5rem 0.8rem; } }
+
+@media (max-width: 500px) {
+  .navigation-list a {
+    padding: 0; }
+  .navigation-title {
+    flex-direction: column-reverse; }
   h1 {
     font-size: 2.5rem; }
-  .admin-text {
-    display: none; } }
+  .admin-text,
+  .brand-logo {
+    display: none !important; } }
