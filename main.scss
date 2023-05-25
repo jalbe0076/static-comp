@@ -163,15 +163,24 @@ h2 {
   max-width: 380px;
   background-color: white;
   margin: 1.1rem;
+  color: $nav-light-grey;
+  box-shadow: 16px 16px 15px -5px rgba(0, 0, 0, 0.22);
 }
 
-h3 {
+h3,
+.playlist-name {
   font-size: 1.3rem;
-  color: $nav-light-grey;
 }
 
-.date {
-  color: $nav-light-grey;
+.playlist-name {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.num-attachements {
+  font-size: 3rem;
+  color: $brand-blue;
+  font-weight: 600;
 }
 
 .web-link-container {

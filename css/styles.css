@@ -111,14 +111,22 @@ h2 {
 .card {
   max-width: 380px;
   background-color: white;
-  margin: 1.1rem; }
+  margin: 1.1rem;
+  color: #787878;
+  box-shadow: 16px 16px 15px -5px rgba(0, 0, 0, 0.22); }
 
-h3 {
-  font-size: 1.3rem;
-  color: #787878; }
+h3,
+.playlist-name {
+  font-size: 1.3rem; }
 
-.date {
-  color: #787878; }
+.playlist-name {
+  margin-bottom: 1.5rem;
+  font-weight: 600; }
+
+.num-attachements {
+  font-size: 3rem;
+  color: #0099FF;
+  font-weight: 600; }
 
 .web-link-container {
   background-color: #EBEBEB;
