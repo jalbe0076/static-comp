@@ -105,7 +105,7 @@ h2 {
 
 .card-layout {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; }
 
 .card {
@@ -159,3 +159,15 @@ h3,
   cursor: pointer; }
   .card:hover .box {
     opacity: 0; }
+
+@media (max-width: 880px) {
+  .card {
+    max-width: 325px;
+    margin: 1.1rem 0.6rem; }
+  h2 {
+    margin-left: 0; } }
+
+@media (max-width: 450px) {
+  .card {
+    max-width: 300px;
+    margin: 1.1rem 0; } }
