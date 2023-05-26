@@ -101,7 +101,7 @@ main {
 h2 {
   color: #333333;
   font-size: 2.8rem;
-  margin-bottom: 1.1rem; }
+  margin: 0 0 1.1rem 1.1rem; }
 
 .card-layout {
   display: flex;
@@ -142,8 +142,20 @@ h3,
 
 .user-photo {
   width: 100%;
-  object-fit: contain;
-  object-position: center; }
+  height: 225px;
+  object-fit: cover;
+  object-position: top;
+  background-color: black; }
 
 .user-info {
   padding: 1.1rem; }
+
+.box {
+  position: absolute;
+  max-width: inherit;
+  opacity: .5; }
+
+.card:hover {
+  cursor: pointer; }
+  .card:hover .box {
+    opacity: 0; }
