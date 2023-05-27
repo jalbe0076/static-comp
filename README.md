@@ -17,16 +17,16 @@ This was a project issued to recreate a static comp using CSS.
 
 ## Screenshots
 ### iPhone XR
-![image](https://github.com/jalbe0076/static-comp/assets/123283073/3fc36dfa-ca54-4f2f-8469-ac9f34410079)
+<img width="317" alt="image" src="https://github.com/jalbe0076/static-comp/assets/123283073/7946896e-f755-4dbd-bbc5-56364a65ac7e">
 
 ### Surface Pro 7
-![image](https://github.com/jalbe0076/static-comp/assets/123283073/a6e5aa4e-8cc8-4a5f-a602-d5181113925e)
+<img width="445" alt="image" src="https://github.com/jalbe0076/static-comp/assets/123283073/54d6d209-0223-44fb-b244-c2ad639f0f60">
 
 ### Desktop 14" monitor
-<img width="1496" alt="image" src="https://github.com/jalbe0076/static-comp/assets/123283073/e0b4507e-8c3a-4dd5-84eb-d5ff78b8b7da">
+<img width="1507" alt="image" src="https://github.com/jalbe0076/static-comp/assets/123283073/48255fcc-7c79-40ae-8cb1-af6eaa78efda">
 
 ### Desktop 27" monitor
-![image](https://github.com/jalbe0076/static-comp/assets/123283073/da9458b8-f89c-4924-a5dc-220bf4e1988f)
+![image](https://github.com/jalbe0076/static-comp/assets/123283073/2fb7fcc9-8da0-4826-b47f-64d93f062634)
 
 ## Installation
 1. `fork` this repository and/or `clone` it to local
